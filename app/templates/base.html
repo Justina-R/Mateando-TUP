@@ -27,7 +27,7 @@
         </div>
   
         <div class="buscador">
-          <form method="get" action="public/buscar" class="buscador">
+          <form method="get" action="/buscar" class="buscador">
             <input type="text" name="search" id="search" aria-label="Buscar en el sitio" placeholder="Buscar..." />
             <button type="submit" id="buscador" aria-label="Iniciar búsqueda">
               <i class="fa fa-search" aria-hidden="true"></i>
@@ -85,7 +85,7 @@
                   <span class="compra" id="carrito-compras"></span>
                   <i class="fa-solid fa-bag-shopping" style="color: white"></i>
                 </a>
-                <a href="{{ url_for('public_bp.login') }}" class="usuario" title="Iniciar sesión" aria-label="Iniciar sesión">
+                <a href="{% if current_user.es_admin %}{{ url_for('admin_bp.dashboard') }}{% else %}{{ url_for('user_bp.miPerfil') }}{% endif %}" class="usuario" title="Iniciar sesión" aria-label="Iniciar sesión">
                   <i class="fa-solid fa-user"></i>
                   <span id="iniciarSesion">
                   {% if current_user.is_authenticated %}
@@ -95,7 +95,7 @@
                   {% endif %}</span>
                 </a>
                 {% if current_user.is_authenticated %}
-                  <form action="user/logout" id="logout"><button class="cerrar-sesion"><i class="fa-solid fa-right-from-bracket"></i></button></form>
+                  <form action="/logout" id="logout"><button class="cerrar-sesion"><i class="fa-solid fa-right-from-bracket"></i></button></form>
                 {% endif %}
               </div>
             </div>
