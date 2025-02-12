@@ -1,0 +1,12 @@
+SECRET_KEY=your_secret_key_here
+DATABASE_URL=sqlite:///mateando.db
+
+MAIL_SERVER=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USE_TLS=True
+MAIL_USERNAME=your_email_here@gmail.com
+MAIL_PASSWORD=your_email_password_here
+MAIL_DEFAULT_SENDER="Mateando, your_email_here@gmail.com"
+
+ADMIN_MAIL=your_admin_email_here@gmail.com
+ADMIN_PASSWORD=your_admin_password_here
