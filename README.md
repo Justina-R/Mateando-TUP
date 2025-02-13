@@ -22,7 +22,7 @@ Repositorio original: [https://github.com/GGabi40/UTN-FRRO-Programacion-II-Matea
 
 1. **Clonar el repositorio**:
    ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   git clone https://github.com/Justina-R/Mateando-TUP
    ```
 
 2. **Crear un entorno virtual**:
@@ -61,7 +61,7 @@ Para mejorar la aplicación, planeo incorporar **Flask Migrate** para gestionar 
 
 ## Deployment
 
-Planeo desplegar la aplicación en **Vercel**. Aquí agregaré la URL una vez esté disponible.
+Puedes ver la aplicación desplegada en **Render** en el siguiente enlace: https://mateando-tup.onrender.com/.
 
 ---
 
